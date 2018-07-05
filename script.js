@@ -15,6 +15,7 @@ var Countdown = {
 
         clearInterval(this.countdown_interval);
         clearInterval(this.firefly_interval);
+        $('.figure').css('visibility', 'visible');
 
         // DOM
         this.$ = {
@@ -50,7 +51,6 @@ var Countdown = {
         let flag = 0;
 
         this.countdown_interval = setInterval(function () {
-/*  */
             if (that.total_seconds > 0) {
 
                 --that.values.seconds;
@@ -95,6 +95,7 @@ var Countdown = {
             else {
                 clearInterval(that.countdown_interval);
                 clearInterval(that.firefly_interval);
+                $('.figure').css('visibility', 'visible');
             }
         }, 1000);
     },
