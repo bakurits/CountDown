@@ -89,7 +89,7 @@ var Countdown = {
                         }
 
                         firefly_togle = 1 - firefly_togle;
-                    }, 300);
+                    }, 250);
                 }
             }
             else {
@@ -168,5 +168,5 @@ var Countdown = {
 };
 
 // Let's go !
-Countdown.init(0, 1, 5);
+Countdown.init(0, 0, 0);
 Countdown.setColor("#c3278f");
